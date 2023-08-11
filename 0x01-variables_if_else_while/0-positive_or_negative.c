@@ -2,18 +2,19 @@
 #include <stdlib.h>
 #include <time.h>
 
-/**
- * main - prints if number is positive , zero or negative
- * return: always (success)
- */
-
 int main(void) {
     int n;
 
-    srand(time(0)); // Seed the random number generator with current time
-    n = rand() % (RAND_MAX + 1) - (RAND_MAX / 2); // Generate a random number
+    // Seed the random number generator with current time
+    srand(time(0));
 
+    // Generate a random number using rand() function
+    n = rand();
+
+    // Print the generated number
     printf("The number %d\n", n);
+
+    // Check whether the number is positive, zero, or negative
     if (n > 0) {
         printf("is positive\n");
     } else if (n == 0) {
@@ -24,3 +25,4 @@ int main(void) {
 
     return 0;
 }
+
