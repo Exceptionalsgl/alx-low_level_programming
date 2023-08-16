@@ -1,22 +1,17 @@
+#include "main.h"
 #include <stdio.h>
 
-/**
- * print_9_times_table - this function print 9n times table
- * Return: 0
-*/
-
-void print_9_times_table(void)
+void times_table(void)
 {
-    int i;
-    for (i = 0; i <= 10; i++)
-    {
-        printf("9 x %d = %d\n", i, 9 * i);
-    }
-}
+	int i, j, result;
 
-int main(void)
-{
-    print_9_times_table();
-    return 0;
+	for (i = 0 ; i < 10 ; i++)
+	{
+		for (j = 0 ; j < 10 ; j++)
+		{
+			result = i * j;
+			printf("%d", result);
+		}
+	}
+	printf("\n");
 }
-
